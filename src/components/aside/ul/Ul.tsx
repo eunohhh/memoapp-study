@@ -35,7 +35,7 @@ function Ul() {
                             {memo.contents === "" ? "새로운 메모" : h6String}
                         </StyledH6>
                         {/* 가공된 날짜 시간 정보 값에서 인덱스 13부터 표시 - 연월일 필요없으므로 */}
-                        <StyledTime>{memo.time.slice(13)}</StyledTime>
+                        <StyledTime>{memo.time.slice(12)}</StyledTime>
                     </StyleLi>
                 );
             })}

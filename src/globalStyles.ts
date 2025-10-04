@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
         line-height: 1.15;
         text-size-adjust: 100%;
-        tab-size: 4;
+        tab-size: 2;
     }
 
     html, body{
@@ -152,6 +152,18 @@ const GlobalStyle = createGlobalStyle`
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
+    }
+
+    /* 모바일 최적화 */
+    @media (max-width: 768px) {
+        #root {
+            align-items: stretch;
+            justify-content: stretch;
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }
     }
 `;
 
